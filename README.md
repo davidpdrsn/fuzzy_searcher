@@ -5,12 +5,12 @@ Functions for doing fuzzy searches in strings
 Example usage
 
 ```javascript
-var searcher = new FuzzySearcher()
+var searcher = new FuzzySearcher();
 
-searcher.isSubsequence("foo", "foobar") // => true
-searcher.isSubsequence("foo", "bar") // => false
+searcher.isSubsequence("foo", "foobar"); // => true
+searcher.isSubsequence("foo", "bar"); // => false
 
-var words = ["foo","bar","foobar"]
+var words = ["foo","bar","foobar"];
 
-searcher.matches("foo", words) // => ["foo","foobar"]
+searcher.matches("foo", words); // => ["foo","foobar"]
 ```
